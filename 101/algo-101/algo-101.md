@@ -1118,3 +1118,11 @@ def knapsack_dp(wgt: list[int], val: list[int], cap: int) -> int:
   2. 当余数为 0 时，代表 n 是 3 的倍数，因此不做任何处理。
   3. 当余数为 2 时，不继续划分，保留。
   4. 当余数为 1 时，由于 2×2>1×3 ，因此应将最后一个 3 替换为 2 
+
+
+
+
+
+# 参考资料
+
+- [hello-algo](https://www.hello-algo.com/)
