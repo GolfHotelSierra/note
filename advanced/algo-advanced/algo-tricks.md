@@ -2,29 +2,31 @@
 
 # 链表
 
-1. 使用**多个指针**
-   - [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
-2. 创建**辅助链表**
-   - [86. 分隔链表](https://leetcode.cn/problems/partition-list/)
-3. 使用头结点 **dummy head**
-   - [86. 分隔链表](https://leetcode.cn/problems/partition-list/)
+- 使用**多个指针**
+  - [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
+- 创建**辅助链表**
+  - [86. 分隔链表](https://leetcode.cn/problems/partition-list/)
 
-4. 不依赖前继节点，**通过复制值删除当前节点**
+- 使用头结点 **dummy head**
+  - [86. 分隔链表](https://leetcode.cn/problems/partition-list/)
 
-   但是**无法删除最后一个节点**
+- 不依赖前继节点，**通过复制值删除当前节点**
 
-   - [237. 删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/)
+  但是**无法删除最后一个节点**
 
-5. 有些链表确实一次循环无法得到结果，需要**多次循环**
+  - [237. 删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list/)
 
-   - [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/)
+- 有些链表确实一次循环无法得到结果，需要**多次循环**
+  - [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/)
 
-6. 链表题目**不代表不可以使用其它的数据结构辅助**，比如哈希表
-   - [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/)
+- 链表题目**不代表不可以使用其它的数据结构辅助**，比如哈希表
+  - [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/)
 
-7. **将数组看做链表，将 nums[index] = value，看做 index -> value**
+- **将数组看做链表，将 nums[index] = value，看做 index -> value**
+  - [287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)
 
-   - [287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)
+- 涉及**反转问题**，尝试**多指针**或**递归**
+  - [LCR 141. 训练计划 III](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/)
 
 
 
