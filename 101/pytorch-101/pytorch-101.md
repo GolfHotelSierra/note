@@ -316,6 +316,12 @@ conv_layer = nn.Conv2d(in_channels=3, out_channels=1, kernel_size=3, padding=1)
 y = conv_layer(x) # y.shape=(1,1,5,5)
 ```
 
+**`nn.Dropout()`**
+
+```python
+self.dropout = nn.Dropout(0.1) # 10%的计算结果被置0
+```
+
 
 
 ## 查看网络参数
