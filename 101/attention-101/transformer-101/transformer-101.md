@@ -18,7 +18,9 @@
 
 - Decoder 在<u>*推理过程中*</u>的输入，是上一时间步模型的预测
 
-  在<u>*训练过程中*</u>，使用到了 **Teacher Forcing**；使用 gt 作为输入，而不是使用模型在前一步生成的预测值
+  在<u>*训练过程中*</u>，使用到了 **Teacher Forcing**，i.e. 使用 gt 作为输入，而不是使用模型在前一步生成的预测值
+
+  由于 Decoder 需要上一步的输出，所以在最开始会有一个特殊的输入 <u>*start token*</u> (e.g. `<START>`)，由于加上了这个 token，就像整个 gt 向右移动了，所以在 decoder 部分会有一个 `(shifted right)`
 
 - <u>*Masked Multi-Head Attention*</u>：在推理过程中，Decoder 的输入应该是<u>*只能看到“上文”的*</u>，所以在<u>*训练过程中*</u>需要模拟真实情况，i.e. <u>*只计算和“上文”的 attention*</u>
 

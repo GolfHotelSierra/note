@@ -49,3 +49,11 @@
 - Embedding 的基本目标，
   - 是让如 One-Hot 得到的高维编码 (e.g. token 表长度一般在 $10^3$ 数量级) 进行<u>*降维*</u>
   - 让拥有相同含义的 token 在低维空间中尽量靠近 (e.g. "dog" 和 "cat"、"car" 和 "bus" 等)
+
+
+
+
+
+# 参考资料
+
+- [知乎上对 BPE 的介绍，其中有一个简单的 BPE 计算的例子](https://www.zhihu.com/search?type=content&q=BPE)
