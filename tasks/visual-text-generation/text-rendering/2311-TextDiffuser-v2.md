@@ -3,6 +3,8 @@
 > [TextDiffuser-2: Unleashing the Power of Language Models for Text Rendering](https://arxiv.org/abs/2311.16465)
 >
 > [源码](https://github.com/microsoft/unilm/tree/master/textdiffuser-2)
+>
+> ECCV (5) 2024
 
 # 贡献
 

@@ -5,6 +5,8 @@
 > [Glyph-ByT5-v2: A Strong Aesthetic Baseline for Accurate Multilingual Visual Text Rendering](https://arxiv.org/abs/2406.10208)
 >
 > [源码](https://github.com/AIGText/Glyph-ByT5)
+>
+> ECCV (75) 2024
 
 > 这篇论文好像涉及到侵权问题，所以源码、rebuttal、数据集等都没了，基本相同的内容发了两篇论文
 

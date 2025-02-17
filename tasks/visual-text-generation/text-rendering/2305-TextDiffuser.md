@@ -3,6 +3,8 @@
 > [TextDiffuser: Diffusion Models as Text Painters](https://arxiv.org/abs/2305.10855)
 >
 > [源码](https://github.com/microsoft/unilm/tree/master/textdiffuser)
+>
+> NeurIPS 2023
 
 # 贡献
 
@@ -56,7 +58,7 @@
 
 
 
-## 第二阶段：生成图像
+### 第二阶段：生成图像
 
 <img src="assets/image-20250202001530759.png" alt="image-20250202001530759" style="zoom: 60%;" />
 

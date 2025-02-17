@@ -92,7 +92,7 @@ Stable Diffusion v1 由四大部分组成，
 
 - 一般会将下面三张图在通道维度上拼接后送入 diffusion model
 
-  经过 VAE Encoder 一般是一个 4+4+1=9 通道的图
+  经过 VAE Encoder 后，一般是一个 4+4+1=9 通道的图
 
 <img src="assets/c4393d64f93988e176ff783313f5cf18.png" alt="img" style="zoom:50%;" />
 

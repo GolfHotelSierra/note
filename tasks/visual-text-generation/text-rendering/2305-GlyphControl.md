@@ -3,6 +3,8 @@
 > [GlyphControl: Glyph Conditional Control for Visual Text Generation](https://arxiv.org/abs/2305.18259)
 >
 > [源码](https://github.com/AIGText/GlyphControl-release)
+>
+> NeurIPS 2023
 
 # 贡献
 

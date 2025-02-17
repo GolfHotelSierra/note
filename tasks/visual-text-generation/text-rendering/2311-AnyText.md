@@ -3,6 +3,8 @@
 > [AnyText: Multilingual Visual Text Generation And Editing](https://arxiv.org/abs/2311.03054)
 >
 > [源码](https://github.com/tyxsspa/AnyText)
+>
+> ICLR 2024
 
 # 贡献
 
@@ -52,7 +54,7 @@
 
 - 使用 Pillow 在中心位置，以固定字体和字号绘制另一份“草图”；然后，从这份“草图”中，利用 OCR model 进行提取，将全连接层前一层的输出 (理论上包含了提取出的字形特征) 作为替换目标 token embedding (OCR Encoder 处于冻结状态)
 
-  通过一个 linear 层对齐维度
+  通过一个 linear 层对齐维度同时因为有这个 linear 层，Text Encoder 也可以处于冻结状态
 
 - 在 prompt 中，被绘制的文本会被包裹在双引号中，在进行 tokenization 前可以被识别到并替换为某个特殊的字符 (e.g. `*`)，然后在 tokenization 结束后，记录这个特殊字符对应的 token id，通过 Embedder 后，<u>*将这个 id 对应的 embedding 替换为 OCR Encoder 的输出*</u>
 
@@ -72,7 +74,7 @@
 
 ### Text Perceptual Loss
 
-- 通过 $l_p$ 中的 mask 将生成图像中应该有文本的位置提取出来，然后还是利用 OCR 全连接层之前的 feature，计算 l2 loss
+- Text Perceptual Loss 指通过 $l_p$ 中的 mask 将生成图像中应该有文本的位置提取出来，然后还是利用 OCR 全连接层之前的 feature，计算 l2 loss
 
   $L_{td}$ 是重建损失，$L_{tp}$ 是 Perceptual Loss
 
