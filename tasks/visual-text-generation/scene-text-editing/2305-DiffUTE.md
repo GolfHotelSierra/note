@@ -19,7 +19,7 @@
 
 <img src="assets/image-20250203103001829.png" alt="image-20250203103001829" style="zoom: 60%;" />
 
-- 使用 stable-diffusion-2-inpainting 的结构和权重；OCR detector 使用 PP-OCR，Glyph encoder 使用 TR-OCR
+- 使用 stable-diffusion-2-inpainting 的结构和权重；OCR detector 使用 PP-OCR，Glyph encoder 使用 Tr-OCR
 
 - <u>*VAE 训练*</u>，
 

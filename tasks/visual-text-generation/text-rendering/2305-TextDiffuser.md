@@ -8,9 +8,9 @@
 
 # 贡献
 
-- 提出一个两阶段的模型，第一阶段预测文本在图像中的 layout，第二阶段通过掩码提供额外的信息来生成图像
-- 提出基于从字符获取到的 mask 的损失函数
-- 提出数据集 MARIO-10M
+- 提出一个两阶段的模型，第一阶段<u>*预测文本在图像中的 layout*</u>，第二阶段通过<u>*掩码提供额外的信息*</u>来生成图像
+- 提出<u>*基于从字符获取到的 mask 的损失函数*</u>
+- 提出<u>*数据集 MARIO-10M*</u>
 
 
 
@@ -32,11 +32,15 @@
 
   - <u>*Pos*</u> 指的就是 PE (并且这里使用的好像就是 transformer 初版的 Sinusoidal 编码)
 
-  - <u>*Key*</u> 表示是否是 keyword
+  - <u>*Key*</u> 表示是否是 keyword，是一个<u>*二元的 embedding*</u>；应该是一个线性层
 
-  - <u>*Width*</u> 表示 keyword 的宽度 (这个宽度由 pillow 和固定的字体以及字号决定)
+    虽然公式中输入还是 $P$，但应该和 CLIP 的输入**不是同一个含义**
 
-    > 提升维度的方式可能类似 diffusion model 中对时间步 t 的处理
+  - <u>*Width*</u> 表示 keyword 的宽度 (这个宽度由 pillow 和固定的字体以及字号决定)；是一个线性层
+
+    > 应该会需要提升维度，提升维度的方式可能类似 diffusion model 中对时间步 t 的处理
+    
+    输入是 word 的 width，<u>*通过 Pillow 等第三方库固定住字体和字号从而获取到不同 word 的 width*</u>
 
   使用<u>*相加融合*</u>上述 4 个编码
 
@@ -64,7 +68,7 @@
 
 - 通过上一阶段得到的 shape 为 `(|A|, h, w)` 的 mask 张量
 
-  mask 的 channel 会从 `|A|` 被压缩到 8，然后应该是<u>*在 channel 上和 VAE encoder 输出的图像 concat*</u>
+  mask 的 channel 会从 `|A|` 被压缩到 8，然后应该是<u>*在 channel 上和 VAE encoder 输出的图像 concat*</u> (i.e. inpainting 模型常用的训练方式之一)
 
   > 没有使用 ControlNet 结构
 

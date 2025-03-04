@@ -98,7 +98,7 @@
 
 - FID
 
-- LPIPS：对每层的 feature，在 feature 层面上进行对比 (e.g. 使用 l2 loss)
+- LPIPS：反应图像的相似度；通过某个模型 (e.g. AlexNet)，对每层输出的 feature 计算 l2 loss
 
 - SeqAcc：用来评估文本生成的正确性的
 

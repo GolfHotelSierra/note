@@ -8,7 +8,7 @@
 
 # 贡献
 
-- 借用 NLP 中 Instruction Tuning 的思路；提出一个 <u>*Dual-Encoder*</u> 结构，$ENC_{inst}$ 沿用 CLIP Encoder <u>*对 Instruction 进行编码*</u>，$ENC_{char}$ 在 <u>*character-level 上对需要生成的文本编码*</u>
+- 借用 NLP 中 <u>*Instruction Tuning*</u> 的思路；提出一个 <u>*Dual-Encoder*</u> 结构，$ENC_{inst}$ 沿用 CLIP Encoder <u>*对 Instruction 进行编码*</u>，$ENC_{char}$ 在 <u>*character-level 上对需要生成的文本编码*</u>
 
 
 

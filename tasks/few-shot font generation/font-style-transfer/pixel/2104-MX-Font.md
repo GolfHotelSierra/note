@@ -1,0 +1,80 @@
+[toc]
+
+> [Multiple Heads are Better than One: Few-shot Font Generation with Multiple Localized Experts](https://arxiv.org/abs/2104.00887)
+>
+> [源码](https://github.com/clovaai/mxfont)
+>
+> ICCV 2021
+
+# 贡献
+
+- 使用<u>*多 expert、多 head*</u> 的方式，让模型学习<u>*关注文字的不同部分*</u>；然后通过 <u>*content feature 和 style feature 的提取与解耦*</u>生成图像
+- 针对<u>*多 expert 设计新的损失函数*</u>；设计新的<u>*损失函数以更好地解耦*</u>
+
+
+
+
+
+# 思路
+
+## Framework
+
+<img src="assets/image-20250225230219253.png" alt="image-20250225230219253" style="zoom:50%;" />
+
+- 每个 <u>*expert 与解耦的网络*</u>基本都是卷积 + 激活 + 归一化
+
+**损失函数：**
+
+- $L^G_{adv}$：一般的对抗损失函数
+
+- $L_{recon}$：像素级别的 $L_1$ 损失函数
+
+- $L_{fm}$：feature map 级别的损失函数
+
+- $L_{s,i}$：对于解耦的后的 style feature 和 content feature 都要<u>*分别通过 style classifier (i.e. $Cls_s$) 和 content classifier (i.e. $Cls_u$)*</u>
+
+  以 style feature 为例，通过 $Cls_s$ 能够分类准确的同时，经过 $Cls_u$ 接近均匀分布 (i.e. 解耦足够彻底，不包含任何 content 信息，以至于 content classifier 完全无法分辨)
+
+  <img src="assets/image-20250225231138338.png" alt="image-20250225231138338" style="zoom: 25%;" />
+
+- $L_{c,i}$：对于 style 来说，每个图像都只对应一个 gt style，但是论文中则使用 component-level 的监督，i.e. <u>*content 则可能对应多个 component*</u>
+
+  简言之，每个 expert “术业有专攻”，对于“不擅长”的 component <u>*如果分类错误了不应该也计入损失函数*</u>；为每个 expert “分配”一部分 component 计算 CE loss，而“分配“的原则是希望最终的<u>*置信度的和最大*</u>
+
+  <img src="assets/image-20250225232053877.png" alt="image-20250225232053877" style="zoom: 30%;" />
+
+- $L_{indp\;exp,i}$：<u>*HSIC 算法*</u>可以评价数据间的独立性；<u>*不同 expert 提取出的解耦前的 feature map 间的独立性*</u>希望尽可能强 (i.e. 每个 expert 关注文字的不同部分)
+
+- $L_{indp,i}$：同样使用 <u>*HSIC 算法*</u>；<u>*style feature 和 content feature 间的独立性*</u>希望尽可能强 (i.e. 尽量解耦)
+
+
+
+## 数据集
+
+- 和 LF-Font 使用相同的数据集
+
+
+
+
+
+# Evaluation Metric
+
+- Acc (style 正确、content 正确、两者都正确)
+- LPIPS
+- FID
+
+
+
+
+
+# Ablation
+
+- 多 expert 是有效的
+
+  每个 expert 确实都在关注文字的不同部分 (即使没有显式监督)
+
+- style classifier 和 content classifier (component-level) 分别进行监督是有效的
+- 损失函数设计有效
+
+
+

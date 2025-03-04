@@ -6,8 +6,8 @@
 
 # 贡献
 
-- 基于 character-level 的视觉文本编码器；通过额外的 cross attention 层输入字形信息
-- 提出了基于 character-level 的 OCR loss (监督字形) 和 segmentation mask loss (监督位置)
+- 基于 <u>*character-level 的视觉文本编码器*</u>；通过额外的 <u>*cross attention 层输入字形信息*</u>
+- 提出了基于 <u>*character-level 的 OCR loss*</u> (监督字形) 和 <u>*segmentation mask loss*</u> (监督位置)
 
 
 
@@ -23,7 +23,7 @@
 
 > 论文中好像没有给出这部分的网络结构
 
-- 通过 OCR 提取出文本，然后在 character-level 上进行 tokenization
+- 通过 OCR 提取出文本，然后<u>*在 character-level 上进行 tokenization*</u>
 
   > 可能是在检测过程中 bbox 是以 character 为单位的，然后将 bbox 转为 visual token
 

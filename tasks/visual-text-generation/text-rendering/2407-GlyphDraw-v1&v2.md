@@ -18,7 +18,7 @@
 
 - 在训练过程中，$l_m$ i.e. mask 来自 gt
 
-- 而在推理过程中，mask 可以由用户提供；如果用户不提供，则在前几步中先将 mask 设置为空白，模型在 mask 为空的时候也有一定的文本生成能力，虽然字形不正确但可以提供大体的位置信息，然后通过一个 MLP 提取出 mask 替换掉空白的 mask，继续生成过程
+- 而在推理过程中，mask 可以由用户提供；如果用户不提供，则在前几步中<u>*先将 mask 设置为空白*</u>，模型在 mask 为空的时候也有一定的文本生成能力，虽然字形不正确但可以提供大体的位置信息，然后<u>*通过一个 MLP 提取出 mask 替换掉空白的 mask*</u>，继续生成过程
 
   该 mask 预测模型也会使用 MSE 训练
 
@@ -26,17 +26,17 @@
 
 **字形信息**
 
-- 白底黑字居中绘制 (应该是也是用了 Pillow 之类的库)
+- <u>*白底黑字居中绘制*</u> (应该是也是用了 Pillow 之类的库)
 
 **融合**
 
-- $z_t$, $l_m$, $l_g$ 先在 channel 上 concat，然后经过一个 `conv_in` 卷积网络进行融合
-- $l_g$ 还会被提取 visual token embedding，和 CLIP 的 token embedding 进行 concat 融合，作为 <u>*key、value*</u>
+- <u>*$z_t$, $l_m$, $l_g$ 先在 channel 上 concat*</u>，然后经过一个 `conv_in` 卷积网络进行融合
+- <u>*$l_g$ 还会被提取 visual token embedding，和 CLIP 的 token embedding*</u> 进行 <u>*concat 融合*</u>，作为 <u>*key、value*</u>
 - 只有 `conv_in` 卷积和相关的 $W_k$ 和 $W_v$ 线性网络会被训练；大部分 UNet 都处于冻结状态
 
 **损失函数**
 
-- 对文本应该生成的位置 (i.e. mask 表示的位置) 处的重建损失给予更多的权重
+- 对文本应该生成的位置 (i.e. mask 表示的位置) 处的重建损失<u>*给予更多的权重*</u>
 
 <img src="assets/image-20250207112137687.png" alt="image-20250207112137687" style="zoom: 40%;" />
 
@@ -48,9 +48,9 @@
 
 ## 贡献
 
-- 使用 LLM 来预测 layout 和 font
-- 使用新的视觉模型提取字形特征，并能够与和 text embedding 相同的方式被 UNet 学习
-- 三重交叉机制，在 SpatialTransformer 中处理 text embedding 的 CA 以外，加入处理 ControlNet token 和 visual glyph token 的 CA
+- 使用 <u>*LLM 来预测 layout 和 font*</u>
+- 使用新的视觉模型提取字形特征，<u>*通过 linear 与和 text embedding 相同的方式被 UNet 学习*</u>
+- <u>*三重交叉机制*</u>，在 SpatialTransformer 中处理 text embedding 的 CA 以外，加入处理 ControlNet token 和 visual glyph token 的 CA
 - 提出更多保证背景生成效果的损失函数
 - 新的以海报为主的高分辨率数据集
 
@@ -68,17 +68,17 @@
 
 - 在训练过程中，会从 gt 中裁剪 (Glyph Crop) 出包含文本的部分 (可能是 OCR 检测文本，然后按照 bbox 割出来)
 
-  改为使用 InternViT 来提取 visual token
+  改为使用 <u>*InternViT 来提取 visual token*</u>
 
-- 使用线性网络 (Linear) 与 text embedding 进行对齐，然后将对应 text token embedding 替换为这些 visual token embedding (与 AnyText 的做法一致，不过 AnyText 用 OCR 模型提取 visual token)
+- 使用<u>*线性网络 (Linear) 与 text embedding 进行对齐*</u>，然后将<u>*对应 text token embedding 替换为这些 visual token embedding*</u> (与 AnyText 的做法一致，不过 AnyText 用 OCR 模型提取 visual token)
 
-- 因为有线性网络存在，原始的 Text Encoder 可以被冻结
+  因为有线性网络存在，原始的 Text Encoder 可以被冻结
 
 #### ControlNet
 
-- ControlNet 的输入是 Glyph Render 形成的”草图“的 Canny 图
-- ControlNet 中 `encoder_hidden_states` 输入的不是 text embedding，而是 glyph visual embedding
-- ControlNet 的融合方式不是和 Decoder 的对应层进行相加融合，而是以 CA 的方式进行融合
+- ControlNet 的输入是 Glyph Render <u>*形成的”草图“的 Canny 图*</u>
+- ControlNet 中 `encoder_hidden_states` 输入的不是 text embedding，而<u>*只有 glyph visual embedding*</u>
+- ControlNet 的融合方式不是和 Decoder 的对应层进行相加融合，而是<u>*以 CA 的方式进行融合*</u>
 
 #### Triples of Cross-Attention (TCA)
 
@@ -87,13 +87,13 @@
   - ControlNet 每层输出的 feature 作为 <u>*key、value*</u>
   - InternViT 提取出的 visual token embedding 作为 <u>*key、value*</u>
 
-  增加方式不是直接复制 (不是多头)，然后通过一定的权重 (为超参数) 相加融合，
+  <u>*增加方式是直接复制 auery*</u> (不是多头)，然后通过一定的权重 (为超参数) <u>*相加融合*</u>，
 
   <img src="assets/image-20250207205236527.png" alt="image-20250207205236527" style="zoom:60%;" />
 
 #### Auxiliary Align Loss (AAL)
 
-- 对于原始处理 text embedding 的 CA，对使用 TCA 时和不使用 TCA 时的这一层 CA 的输出计算 l2 loss
+- 对于原始处理 text embedding 的 CA，<u>*对使用 TCA 时和不使用 TCA 时的这一层 CA 的输出计算 l2 loss*</u>
 
   目的是在加入新的控制信息同时尽量维持原本的图像生成能力
 

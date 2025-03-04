@@ -6,7 +6,7 @@
 
 # 贡献
 
-- 使用 <u>*cross attention*</u> 注入 character-level 的位置信息；同时，<u>*character-level 的 mask*</u> 不来自于 gt 和用户输入而是<u>*通过预测得到*</u>
+- 使用 <u>*cross attention*</u> 注入 character-level 的位置信息；同时，在<u>*训练阶段*</u>一段时间后，<u>*character-level 的 mask*</u> 不来自于 gt 而是<u>*通过预测得到*</u>，增加 flexibility
 - 从位置信息 mask，ROI attention，类似 CLIP 的对比 (相似度) 损失，text embedding 通过分类器获取 character id 这几方面<u>*构建新的损失函数*</u>
 
 
@@ -23,7 +23,9 @@
 
 ### 预测 charactler-level mask
 
-- 将 <u>*text embedding 作为 key、value*</u> (i.e. 这里<u>*使用 attention 来预测 mask*</u>，需要和将 attetntion 计算 ROI 区分开)，对于每一层 cross attention 的同一个 character 的 attention 值求平均，得到 $\bar A$
+> 应该只和训练有关，可能是一致固定使用 gt 里面的 character-level mask 会影响多样性和泛化性，所以一段时间后就交给模型自己来调整 ROI 了
+
+- 将 <u>*text embedding 作为 key、value*</u> (i.e. 这里<u>*使用 attention 来预测 mask*</u>，而不是使用 attetntion 计算 ROI)，对于每一层 cross attention 的同一个 character 的 attention 值求平均，得到 $\bar A$
 
   然后，通过<u>*高斯模糊平滑*</u> (最终为了防止 mask 边缘过于锐利)，再经过以下两个公式，<u>*计算得到 mask*</u>，
 
