@@ -1,6 +1,22 @@
 [toc]
 
-# ControlNet
+> [Adding Conditional Control to Text-to-Image Diffusion Models](http://arxiv.org/abs/2302.05543)
+>
+> [源码](https://github.com/lllyasviel/controlnet)
+>
+> ICCV 2023
+
+# 贡献
+
+- 通过<u>*复用 sd encoder 结构*</u>的方式，引入新的控制信息
+
+
+
+
+
+# 思路
+
+## Framework
 
 - 将其它控制信息 (如 mask、骨骼、边缘图等)，作为一个附加的网络，与原始的 diffusion model 进行组合
 

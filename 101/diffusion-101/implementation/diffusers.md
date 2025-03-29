@@ -106,6 +106,8 @@ latents = self.scheduler.step(noise_pred, t, latents, **extra_step_kwargs, retur
 
 6. **通过 `vae.decode()` 函数将 latent 图像还原回 image 中**
 
+   还原后的 image 是 `Image` 对象
+
 ```python
 if not output_type == "latent":
     image = self.vae.decode(latents / self.vae.config.scaling_factor, return_dict=False, generator=generator)[0]
@@ -269,6 +271,27 @@ def forward(
 
 
 
+# Inference
+
+## T2I
+
+```python
+import torch
+from diffusers import StableDiffusionXLPipeline
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16
+)
+pipe = pipe.to("cuda")
+
+prompt = "a photo of an astronaut riding a horse on mars"
+image = pipe(prompt).images[0]
+```
+
+
+
+
+
 # 修改模块
 
 ## `AttnProcessor` 修改 attention 的调用逻辑
@@ -301,16 +324,6 @@ class AttnProcessor:
 ```python
 pipe.unet.set_attn_processor(custom_processor)
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 
