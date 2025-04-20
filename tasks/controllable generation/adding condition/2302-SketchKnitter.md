@@ -1,8 +1,8 @@
 [toc]
 
-> [[SketchKnitter: Vectorized Sketch Generation with Diffusion Models](https://openreview.net/pdf?id=4eJ43EN2g6l)](https://openreview.net/pdf?id=4eJ43EN2g6l)
+> [SketchKnitter: Vectorized Sketch Generation with Diffusion Models](https://openreview.net/pdf?id=4eJ43EN2g6l)
 >
-> [源码](https://github.com/wangqiang9/SketchKnitter?tab=readme-ov-file)
+> [official code](https://github.com/wangqiang9/SketchKnitter?tab=readme-ov-file)
 >
 > ICLR 2023
 
@@ -10,7 +10,7 @@
 
 - 通过扩散模型生成简笔画；本质上，是使用扩散模型预测 $(\Delta x,\Delta y,g)$ 三元组其中的 $(\Delta x,\Delta y)$，i.e. 输入输出<u>*特征图为 (N, 2)*</u>
 
-> 感觉可以用在 online 字体生成上
+> 像是用 diffusion model 做了序列预测任务；感觉可以用在 online 字体生成上
 
 
 
@@ -22,7 +22,7 @@
 
 <img src="assets/image-20250318222850340.png" alt="image-20250318222850340" style="zoom:50%;" />
 
-##### **Problem Setup**
+**Problem Setup**
 
 - $\Delta x$ 和 $\Delta y$ 表示在 x 轴和 y 轴上的移动距离，$g$ 表示移动过程中是否要进行绘制 (二元)
 

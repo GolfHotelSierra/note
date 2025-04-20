@@ -41,6 +41,8 @@ x_samples_ddim = model.decode_first_stage(samples_ddim) # 通过VAE decoder还�
 
 # 基础模块
 
+> 主要关注这些目录以其中的内容， `models` 和 `configs` 目录主要是存放配置文件，`ldm` 目录是主要模块的代码实现，`scripts` 目录是包括推理在内的一些脚本
+
 ## `DDIMSampler`
 
 - sampler 的实例化对象默认使用 `sampler = DDIMSampler(model)`，来自 `from ldm.models.diffusion.ddim import DDIMSampler`
@@ -50,7 +52,7 @@ x_samples_ddim = model.decode_first_stage(samples_ddim) # 通过VAE decoder还�
 ```python
 def __init__(self, model, schedule="linear", **kwargs):
     super().__init__()
-    self.model = model # unet、encoder、vae都绑在了model上
+    self.model = model # unet、encoder、vae都绑在了model上; 一般是一个LatentDiffusion实例
     self.ddpm_num_timesteps = model.num_timesteps
     self.schedule = schedule # scheduler
 ```
@@ -153,7 +155,7 @@ class DDPM(pl.LightningModule):
     def __init__(self,
                  unet_config,
                  ...):
-        self.model = DiffusionWrapper(unet_config, conditioning_key) # 这个model是单纯的unet了
+        self.model = DiffusionWrapper(unet_config, conditioning_key) # 这个model是单纯的unet了; DiffusionWrapper是额外的封装, 去掉封装可以看做是个UNetModel实例
         
 
 class LatentDiffusion(DDPM):
