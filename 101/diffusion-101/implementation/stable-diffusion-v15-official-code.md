@@ -57,7 +57,7 @@ def __init__(self, model, schedule="linear", **kwargs):
     self.schedule = schedule # scheduler
 ```
 
-**`sampler.sampler()`**
+**`sampler.sample()`**
 
 ```python
 @torch.no_grad()

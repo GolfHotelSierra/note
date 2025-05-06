@@ -52,7 +52,10 @@
 
      > 论文中的具体设置为，We set the iterations to 𝑡1 = 0, 𝑡2 = 10, and 𝑡3 = 20 with minimum required attention values of 𝑇1 = 0.05,𝑇2 = 0.5, and 𝑇3 = 0.8
 
-     
+  
+  > step 9 的公式表示**直接在 $z_t$ 上 (i.e. latent code) 进行了更新** (这和 cfg-like 的方法有着一定的区别)，这个做法似乎是 Attend-and-Excite 第一个提出的，论文的 section 4 提出了这个公式但是没有给出进一步的 insight，后续的一些 paper 也只是延续了这种做法
+  
+  
 
 # 参考文献
 

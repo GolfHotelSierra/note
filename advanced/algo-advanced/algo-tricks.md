@@ -22,9 +22,10 @@
 - 链表题目**不代表不可以使用其它的数据结构辅助**，比如哈希表
   - [138. 随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer/)
 
-- **将数组看做链表，将 nums[index] = value，看做 index -> value**
+- **将数组看做链表，将 nums[index] = value，看做 index -> value** + **抽象链表成环**
+  
   - [287. 寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number/)
-
+  
 - 涉及**反转问题**，尝试**多指针**或**递归**
   - [LCR 141. 训练计划 III](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/)
 
@@ -64,7 +65,7 @@
   - [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
 - **双指针交替移动**
   - [167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
-- **快慢指针 + 循环指针 + 替代未知值**
+- **快慢指针 + 循环指针 + 替代未知值 (本质是让快慢指针的路程相等)**
   - [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
 - **滑动窗口 + 排序  + 三指针 (去重)**
   - [15. 三数之和](https://leetcode.cn/problems/3sum/)
