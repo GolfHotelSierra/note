@@ -6,6 +6,13 @@
 >
 > NeurIPS 2024
 
+# 问题提出
+
+- 之前的工作以 visual image 的方式提供 content 信息，但该论文认为 image 形式提供的 content 无法完全解耦特定 font 的影响
+- 无法生成不存在的字符
+
+
+
 # 贡献
 
 - 将字体风格迁移转为<u>*序列预测任务*</u>，即根据 content image token 自回归地预测后续的 token
@@ -23,6 +30,8 @@
 # 思路
 
 ## Framework
+
+<img src="assets/image-20250701021652471.png" alt="image-20250701021652471" style="zoom:40%;" /> 将 FSFG 解释为序列预测任务
 
 ![image-20250308174156680](assets/image-20250308174156680.png)
 

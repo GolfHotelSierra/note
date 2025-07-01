@@ -19,7 +19,7 @@
 
 ## Framework
 
-<img src="assets/image-20250416175741650.png" alt="image-20250416175741650" style="zoom:70%;" />
+![image-20250506115311212](assets/image-20250506115311212.png)
 
 **数据准备：**
 
@@ -27,7 +27,9 @@
 
 **模型框架：**
 
-- （1）原始图像（2）masked image（3）mask（4）character-level mask，**在 channel 上 concat 作为输入**
+- 两阶段模型 (见结构图)，第一阶段使用已有的模型生成带有文本的图像，使用文本擦除模型去除文本后**得到纯净的背景**，第二阶段在背景图的基础上渲染文本
+
+- 第二阶段，（1）原始图像（2）masked image（3）mask（4）character-level mask，这四个输入**在 channel 上 concat 作为输入**
 
   > 借鉴了 TextDiffuser 的思路
 

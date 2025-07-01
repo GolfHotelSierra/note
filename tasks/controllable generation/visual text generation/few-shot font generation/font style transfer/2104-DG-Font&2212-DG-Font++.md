@@ -89,6 +89,8 @@
 
 # DG-Font++
 
+> [DGFont++: Robust Deformable Generative Networks for Unsupervised Font Generation](https://arxiv.org/pdf/2212.14742)
+
 ## 贡献
 
 - 提出了 attn 形式的 <u>*FDSC-attn*</u>，<u>*以 feature map 的形式通过 self attn 实现*</u>
@@ -108,7 +110,9 @@
 
 <img src="assets/image-20250304231004528.png" alt="image-20250304231004528" style="zoom:40%;" />
 
-- <u>*feature map 形式的 self-attn*</u>
+- 可以看做 <u>*feature map 形式的 self-attn*</u>
+
+  <img src="assets/image-20250630230822618.png" alt="image-20250630230822618" style="zoom:60%;" /> 相当于 Q、K 计算，<img src="assets/image-20250630230903279.png" alt="image-20250630230903279" style="zoom:60%;" /> 是与 V 计算
 
 **损失函数**
 

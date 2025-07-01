@@ -16,7 +16,7 @@
 
 - 本论文对 Attend and Excite 可能导致的一些问题进行了分析
 
-- 在 Attend and Excite 中，存在一个 scalar 对损失函数梯度进行放缩，而这个 scalar 对于不同的内容并不稳定
+- 在 Attend and Excite 中，存在一个 <u>*scalar 对损失函数梯度进行放缩*</u>，而<u>*这个 scalar 对于不同的内容并不稳定*</u>
 
   <img src="assets/image-20250501215254996.png" alt="image-20250501215254996" style="zoom:50%;" />
 

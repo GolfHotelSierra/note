@@ -1,6 +1,6 @@
 [toc]
 
-> [Calliffusion: Chinese Calligraphy Generation and Style Transfer with Diffusion Modeling](https://arxiv.org/abs/2305.19124)
+> [Calliffusion: Chinese Calligraphy Generation and Style Transfer with Diffusion Modeling](https://arxiv.org/abs/2305.19124) (ICCC 2023)
 >
 > [CalliffusionV2: Personalized Natural Calligraphy Generation with Flexible Multi-modal Control](https://arxiv.org/abs/2410.03787)
 
@@ -22,7 +22,7 @@
 **训练策略**
 
 - 引入了 <u>*skeleton*</u> (Zhang-Suen thinning algorithm) 作为 glyph 控制
-- 训练过程中存在两类输入 (在推理过程会从在可以切换的两条支线)，
+- 训练过程中存在两类输入 (在推理过程会存在可以切换的两条支线)，
   - 输入 skeleton + 书法描述
   - 输入书法描述 + character id
 
@@ -34,7 +34,7 @@
 
 ## 数据集
 
-- 150 中书法 font，每个 font 4000 个字符
+- 150 种书法 font，每个 font 4000 个字符
 
 
 

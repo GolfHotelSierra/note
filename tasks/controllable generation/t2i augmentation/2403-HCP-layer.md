@@ -15,6 +15,8 @@
 
 ## Framework
 
+> 这<u>*不是*</u>一个 training-free 方法
+
 - 论文中主要针对的任务是复杂人体姿态的生成 (e.g. yoga)
 
 <img src="assets/image-20250501110939729.png" alt="image-20250501110939729" style="zoom:50%;" />
@@ -35,6 +37,10 @@
   >
   > 这个预训练模型居然可以提取出 feature 和 attn map 对应上计算相似度，怀疑是不是试了很多模型的 feature map 和 attn map 长得比较像就用了
 
+  完整损失函数，
+
+  <img src="assets/image-20250510111111865.png" alt="image-20250510111111865" style="zoom:55%;" />
+
 - **自适应的权重函数**
 
   <img src="assets/image-20250501114327319.png" alt="image-20250501114327319" style="zoom:55%;" />
@@ -45,6 +51,6 @@
 
   > <img src="assets/image-20250501114408931.png" alt="image-20250501114408931" style="zoom:50%;" />
   >
-  > 论文中通过可视化了各个时间步和分辨率的 attn map 总结得到了上面的公式，但并不是很难看懂是如何总结出来的
+  > 论文中通过可视化了各个时间步和分辨率的 attn map 总结得到了上面的公式，但并不是很容易看懂是如何总结出来的
   >
   > 原文在 section 3.1 进行了分析

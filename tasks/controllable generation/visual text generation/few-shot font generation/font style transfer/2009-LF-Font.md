@@ -23,7 +23,11 @@
 
 **Component-wise Style Encoder**
 
-- 预先收集每个字符可以被拆分为哪些 component，向 Component-wise Style Encoder <u>*输入 component id*</u>，通过学习 Component-wise Style Encoder 可以<u>*提取出这个 component 在这个字体的这个文字中的 style feature*</u>
+- 该论文中的 component 介于笔画和部首之间
+
+- 先从 reference image 中使用常用的方式提取 feature map，然后根据组成 content image 的 component 序列，对 feature map 计算一个 **channel-wise bias**，可以看做是让“全局”的 style feature 向实际需要的 component <u>*靠近*</u>，
+
+  <img src="assets/image-20250630191149033.png" alt="image-20250630191149033" style="zoom:50%;" /> 其中 $b_i$ 来自 component id 编码
 
 **Factorization Modules**
 

@@ -18,7 +18,7 @@ import lightning.pytorch as pl
 
    （2）**实现 `training_step()` 和 `configure_optimizers()`**
 
-   这个类中封装的模型仍然使用常用的 pytorch 提供的 `nn.Module` 实现
+   这个类中封装的模型仍然可以使用常用的 pytorch 提供的 `nn.Module` 实现
 
 ```python
 class LitAutoEncoder(pl.LightningModule):
@@ -79,7 +79,7 @@ class LitAutoEncoder(pl.LightningModule):
 trainer = Trainer()
 
 # 执行test方法
-trainer.test(model, dataloaders=DataLoader(test_set)) # 不需要先显式调用eval()函数; 当时如果不是调用test()函数, 仍然需要先显式调用eval()函数
+trainer.test(model, dataloaders=DataLoader(test_set)) # 不需要先显式调用eval()函数; 但是如果不是调用test()函数, 仍然需要先显式调用eval()函数
 ```
 
 

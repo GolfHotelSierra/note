@@ -26,7 +26,7 @@
 
 <img src="assets/image-20250404220914876.png" alt="image-20250404220914876" style="zoom:50%;" />
 
-- 猜测 LGP 的训练应该是基于这样一个假设：diffusion model 的图生图的<u>*生成图像和输入图像 (i.e. gt) 大体上长得差不多*</u> (不管是 latent image 还是 image)；根据这个假设，从 gt 中提取出对应的 sketch，然后收集 unet 中每层的输出 (论文中将每层输出 **concat** 在一起) 作为 LGP 的输入，如果生成的 sketch 与直接从 gt 中提取出对应的 sketch 不符，那么就可以基本确定是 LGP 的“能力”不足，i.e. 可以作为训练 LGP 的损失函数
+- 猜测 LGP 的训练应该是基于这样一个假设：diffusion model 的<u>***图生图**的生成图像和输入图像 (i.e. gt) 大体上长得差不多*</u> (不管是 latent image 还是 image)；根据这个假设，从 gt 中提取出对应的 sketch，然后收集 unet 中每层的输出 (论文中将每层输出 **concat** 在一起) 作为 LGP 的输入，如果生成的 sketch 与直接从 gt 中提取出对应的 sketch 不符，那么就可以基本确定是 LGP 的“能力”不足，i.e. 可以作为训练 LGP 的损失函数
 
 - 有了预训练好的 LGP 后，在训练 diffusion model 的过程中加上 **LGP 提取出的 sketch 和注入的 sketch 之间的 l2 loss** 作为损失函数即可
 

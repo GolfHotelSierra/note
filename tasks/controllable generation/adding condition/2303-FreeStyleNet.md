@@ -34,7 +34,7 @@
 
 - 提出了 **Rectified Cross-Attention (RCA)**
 
-  > 这不是一个 training-free 的方法
+  > 这<u>*不是*</u>一个 training-free 的方法
 
 - **算法流程**
 

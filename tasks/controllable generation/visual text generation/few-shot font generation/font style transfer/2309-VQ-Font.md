@@ -6,6 +6,12 @@
 >
 > ICCV 2023
 
+# 问题提出
+
+- 之前的工作需要预先定义字形的空间结构，不利于跨语言生成
+
+
+
 # 贡献
 
 - 使用 VQ-GAN 做字体生成，将 <u>*content embedding 和 style embedding 都转化为 code embedding*</u>

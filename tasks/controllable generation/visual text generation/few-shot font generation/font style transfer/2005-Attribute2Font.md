@@ -4,7 +4,7 @@
 >
 > [源码](https://github.com/ueoo/Attr2Font)
 >
-> ACM Trans. Graph. 39(4)
+> ACM 2020
 
 # 贡献
 

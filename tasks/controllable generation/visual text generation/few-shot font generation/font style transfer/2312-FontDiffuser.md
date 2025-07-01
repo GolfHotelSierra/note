@@ -6,6 +6,13 @@
 >
 > AAAI 2024
 
+# 问题提出
+
+- 当风格变化太大时，之前的工作生成效果不佳
+- 对于 stroke、component 等标注的人工消耗很大，不利于训练
+
+
+
 # 贡献
 
 - 沿用 DG-Font 的思路，在 <u>*skip connection 中加入 DCN*</u>，提出<u>*使用 attn 的方式计算 offset*</u>

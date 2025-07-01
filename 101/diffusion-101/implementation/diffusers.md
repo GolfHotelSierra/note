@@ -304,9 +304,9 @@ diffusers 将**调用 attn blk 的逻辑封装在了 `AttnProcessor` 中**
 class AttnProcessor:
     def __call__(
         self,
-        attn: Attention, # attn会被传入
-        hidden_states: torch.Tensor,
-        encoder_hidden_states: Optional[torch.Tensor] = None,
+        attn: Attention, # attn网络
+        hidden_states: torch.Tensor, # x_t(query)
+        encoder_hidden_states: Optional[torch.Tensor] = None, # control信息
         attention_mask: Optional[torch.Tensor] = None,
         temb: Optional[torch.Tensor] = None,
         *args,
@@ -322,7 +322,14 @@ class AttnProcessor:
 2. 通过 **`set_attn_processor()` 函数**传入自定义的 AttnProcessor
 
 ```python
-pipe.unet.set_attn_processor(custom_processor)
+pipe.unet.set_attn_processor(custom_processor) # 传入一个实例
+
+pipe.unet.set_attn_processor(attn_name2attn_processor_dict) # 传入一个字典, attn层名字->attnprocessor
+# e.g.
+# processor_dict = {
+#     "down_blocks.0.attentions.0": XFormersAttnProcessor(),
+#     "down_blocks.0.attentions.1": AttnProcessor(),
+# }
 ```
 
 

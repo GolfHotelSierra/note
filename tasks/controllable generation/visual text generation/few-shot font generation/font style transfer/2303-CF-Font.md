@@ -6,6 +6,12 @@
 >
 > CVPR 2023
 
+# 问题提出
+
+- 之前的工作选择一个固定的 font 来提供 content image；但是这种做法提供的 content image 可能和 target font 在字形上差距过大，导致提供的 content 信息不足
+
+
+
 # 贡献
 
 - 没有使用固定的 font 生成 content image，而是<u>*通过聚类找到“最有代表性”的几类 font*</u>，通过<u>*加权相加提取 content encoding*</u>

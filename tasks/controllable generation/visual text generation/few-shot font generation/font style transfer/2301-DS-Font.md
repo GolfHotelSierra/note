@@ -1,6 +1,14 @@
 [toc]
 
 > [Few-shot Font Generation by Learning Style Difference and Similarity](https://arxiv.org/abs/2301.10008)
+>
+> IEEE 2024
+
+# 问题提出
+
+- 之前的工作只关注了 style 和 glyph 之间的解耦；但是对于相同 style 的不同 glyph 应该接近的监督是不足的，可能导致 style 的不统一
+
+
 
 # 贡献
 

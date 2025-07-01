@@ -22,6 +22,7 @@
 <img src="assets/image-20250225230219253.png" alt="image-20250225230219253" style="zoom:50%;" />
 
 - 每个 <u>*expert 与解耦的网络*</u>基本都是卷积 + 激活 + 归一化
+- 直觉上，每个 expert 关注字符的不同部位 (e.g. 关注左半部分、右半部分)；但并没有使用显式的监督
 
 **损失函数：**
 
@@ -93,17 +94,23 @@
 
 **Mixture of Heterogeneous Aggregation Experts (MOHAE) 和 Heterogeneous Aggregation Attention (HAA)**
 
-- <u>*从 channel 和 spatial (可以看做是加强 mask 区域的 attn map) 两个方向提取 feature*</u>
+- 论文中从 **channel 和 spatial** 两个方向计算 attn
+
+  channel 使用 **channel attention** 实现；spatial attention 对 K、V 进行 **pooling** 实现
+
+  > 感觉像是拆分了 CBAM
 
 **将 content 和 style feature 解耦**
 
 - 对生成图像的 <u>*component id 计算 CE loss*</u>
 
-- 通过欧几里得距离，
+- **Content-Style Homogeneity Loss**
 
-  <img src="assets/image-20250309110345091.png" alt="image-20250309110345091" style="zoom:40%;" />
+  <img src="assets/image-20250309110345091.png" alt="image-20250309110345091" style="zoom: 40%;" />
 
-  > 整个函数的最小值是 0，当且仅当 $f_s$ 和 $f_c$ 方向相反时；但是方向相反就代表两者的解耦充分吗？
+  整个函数的最小值是 0，当且仅当 $f_s$ 和 $f_c$ **方向相反**时
+  
+  > 但是方向相反就代表两者的解耦充分吗？
 
 > 看起来 MX-Font 和 MX-Font++ 对解耦的监督都不是直接通过 gt 实现的，损失函数监督的都是间接的值
 

@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="第 1 页" id="ALUp2gsiZh8de549ZYnm">
+    <mxGraphModel dx="1226" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-1" value="MindMap" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;sortEdges=1;resizable=0;containerType=tree;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;curveFitting=1;jiggle=2;rounded=1;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="110" y="50" width="1040" height="706" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-2" value="Adding Condition" style="whiteSpace=wrap;html=1;shape=ellipse;perimeter=ellipsePerimeter;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};treeFolding=1;treeMoving=1;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="40" y="443" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-7" value="Others" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="220" y="250" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-8" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-2" target="D2KJC5eDPMrw5icbDXVN-7" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-9" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-2" target="D2KJC5eDPMrw5icbDXVN-10" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry">
+            <mxPoint x="275" y="-1156" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-10" value="ControlNet-Like" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="220" y="550" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-11" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-2" target="D2KJC5eDPMrw5icbDXVN-12" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry">
+            <mxPoint x="275" y="-1130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-12" value="T2I Adapter-Like" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;sketch=1;curveFitting=1;jiggle=2;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="220" y="636" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-23" value="SpaText&lt;div&gt;clip image embedding 按照 segmentation mask 的形状堆叠起来，然后在 channel 维度上 concat 到 latent image 上&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="20" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-24" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-23" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-25" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-26" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="405" y="-1137.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-26" value="SketchKnitter&lt;div&gt;使用扩散模型进行类似序列预测的任务，(seq_len, dim) 当做 latent image 使用&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="100" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-27" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-28" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="405" y="-1025" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-28" value="FreeStyleNet&lt;div&gt;通过 cross attn map 注入 spatial 信息，根据 spatial mask 对 attn score 重新分配&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="180" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-33" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-34" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="405" y="-852.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-34" value="HumanSD&lt;div&gt;ControlNet 在引入某些条件上可能并没有优势&lt;/div&gt;&lt;div&gt;控制信息的损失函数权重在抽取到轻度噪声时小一些，重度噪声时多一些&lt;/div&gt;&lt;div&gt;e_pred-e_gt 随训练时间变小，可以套用到上述控制信息的变化中&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="260" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-35" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-36" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="405" y="-352.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-36" value="ALDM&lt;div&gt;将对抗损失引入&lt;/div&gt;&lt;div&gt;多个时间步的对抗噪声取平均，防止噪声加的多的时间步一直被 D 判断为 false&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="370" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-37" value="StableSketching&lt;div&gt;将 sketch condition 当做特殊的 text embedding&lt;/div&gt;&lt;div&gt;将另一个不同 condition 的 unet 预测的噪声单做 gt (有点像 teacher - student)&lt;/div&gt;&lt;div&gt;提出了一个自适应采样函数，函数参数可以更换为其它信息 (论文使用“抽象程度”来选择合适的推理去噪过程)&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="410" y="616" width="610" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-38" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-12" target="D2KJC5eDPMrw5icbDXVN-37" edge="1">
+          <mxGeometry x="280" y="425" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-43" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" source="D2KJC5eDPMrw5icbDXVN-7" target="D2KJC5eDPMrw5icbDXVN-44" edge="1">
+          <mxGeometry x="230" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="405" y="-28" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-44" value="Hummingbird&lt;div&gt;引入 MLLM 生成提示词，并提供更细粒度的 loss (e.g. 数量)&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-1" vertex="1">
+          <mxGeometry x="350" y="470" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-13" value="MindMap" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;sortEdges=1;resizable=0;containerType=tree;fontSize=12;fontFamily=Comic Sans MS;" parent="1" vertex="1">
+          <mxGeometry x="1470" y="140" width="840" height="309" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-14" value="Uni-Control" style="whiteSpace=wrap;html=1;shape=ellipse;perimeter=ellipsePerimeter;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};treeFolding=1;treeMoving=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="40" y="159.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-15" value="Others" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="190" y="65" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-16" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-14" target="D2KJC5eDPMrw5icbDXVN-15" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-17" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-14" target="D2KJC5eDPMrw5icbDXVN-18" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry">
+            <mxPoint x="260" y="69" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-18" value="ControlNet-Like" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="190" y="180" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-19" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-14" target="D2KJC5eDPMrw5icbDXVN-20" edge="1">
+          <mxGeometry x="100" y="-93" width="80" height="26" as="geometry">
+            <mxPoint x="260" y="95" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-20" value="T2I Adapter-Like" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="190" y="254" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-31" value="Collabrative Diffusion&lt;div&gt;训练一个 unet 预测不同的信息对应的权重矩阵，unet 的输入为 timestep 和 condition&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="320" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-32" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-15" target="D2KJC5eDPMrw5icbDXVN-31" edge="1">
+          <mxGeometry x="-1100" y="-95" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-39" value="FG-DMs&lt;div&gt;类似“自回归”地引入控制信息；额外通过重建损失来监督控制信息的学习&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="380" y="249" width="420" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-40" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-20" target="D2KJC5eDPMrw5icbDXVN-39" edge="1">
+          <mxGeometry x="-1050" y="55" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-41" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" source="D2KJC5eDPMrw5icbDXVN-15" target="D2KJC5eDPMrw5icbDXVN-42" edge="1">
+          <mxGeometry x="-1100" y="-95" width="80" height="20" as="geometry">
+            <mxPoint x="1720" y="85.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2KJC5eDPMrw5icbDXVN-42" value="Multi-Gen&lt;div&gt;将额外的控制信息直接在 seq_len 上 concat 到 condition token 后&lt;/div&gt;" style="whiteSpace=wrap;html=1;shape=partialRectangle;top=0;left=0;bottom=1;right=0;points=[[0,1],[1,1]];fillColor=none;align=center;verticalAlign=bottom;routingCenterY=0.5;snapToPoint=1;recursiveResize=0;autosize=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};fontFamily=Comic Sans MS;" parent="D2KJC5eDPMrw5icbDXVN-13" vertex="1">
+          <mxGeometry x="320" y="100" width="390" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

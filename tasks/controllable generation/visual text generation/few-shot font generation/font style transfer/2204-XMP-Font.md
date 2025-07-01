@@ -29,7 +29,7 @@
 
   > 原文： Similarly, the position embedding and the modality type embedding of each spatial coordinate are mapped from the x-y coordinate and the modality label respectively with separate embedding sub-layers.
   >
-  > 位置编码的输入应该是这里的 `x-y`，但没有看懂是什么意思，理论上需要将 (x, y) 的二维信息变成 embedding 某个维度的一维信息
+  > 应该是只对于<u>*划分出的 patch 的二维坐标*</u>，对 x,y 坐标分别编码然后相加
 
 - stroke-level：<u>*stroke id，位置编码 (0 到 29)，模态信息*</u> (二元，表示是 character-level 还是 stroke-level)，三者<u>*相加融合*</u>
 

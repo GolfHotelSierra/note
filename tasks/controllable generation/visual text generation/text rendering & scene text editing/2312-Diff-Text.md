@@ -46,6 +46,22 @@
 
   > e.g. 上图中白色的 $m_{bbx}$ 就是 "sign" 这个“关键字”大致的位置和形状，两者关联起来
 
+> 具体的代码实现使用了 prompt-to-prompt 中的 `AttentionReweight`，对 spatial mask 以外区域的 **attn map 直接置零**，然后对剩下的部分**放大一个 scale**
+>
+> `attn_replace = attn_base * interpolated_tensor[None, None,:,:,:]`
+>
+> `attn_replace[:,:,:,idx] = attn_replace[:,:,:,idx] * 6.0`
+>
+> 
+>
+> 而且看起来好像这个放大是不用重新经过 softmax 的
+>
+> `attn = sim.softmax(dim=-1)`
+>
+> `attn = controller(attn, is_cross, place_in_unet)`
+>
+> `# attn = attn.softmax(dim=-1) # softmax after replace`
+
 
 
 ### Contrastive Image-level Prompts
